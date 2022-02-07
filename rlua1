@@ -1,12 +1,12 @@
 local GUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/aaaa"))()
 
-local UI = GUI:CreateWindow("Kadium","Current Version: V2.25")
+local UI = GUI:CreateWindow("Kadium Hub","Current Version: V2.25")
 
 local HE = UI:addPage("Home",1,true,6)
 
 local LP = UI:addPage("Local Player",1,false,6)
 
-local ST = UI:addPage("Scripts",2.95,false,6)
+local ST = UI:addPage("Scripts",3.55,false,6)
 
 local AS = UI:addPage("Animations",1,false,6)
 
@@ -15,11 +15,13 @@ local CS = UI:addPage("Credits",1,false,6)
 --LABELS
 HE:addLabel("Kadium Hub","Cool Free FE Hub Script!")
 
-HE:addLabel("Update Log:","Kadium got bringed back and added 2 new scripts!")
+HE:addLabel("Update Log:","Kadium Bringed Back.")
 
 LP:addLabel("Local Player Scripts","Use At Ur Own Risk Some Games May Have Anti-cheat.")
 
 ST:addLabel("FE Scripts","Kadium's FE Scripts!")
+
+ST:addLabel("New Scripts:","Katana, Hammer, Sword Switch, VR")
 
 AS:addLabel("Animations Scripts","Mostly Made By My Friend Pan.")
 
@@ -28,6 +30,8 @@ CS:addLabel("Credits:")
 CS:addLabel("the ka#6246","Kadium Owner/Script Creator")
 
 CS:addLabel("Pans#8589","Kadium's Animator Maker")
+
+CS:addLabel("Nexo Animator","Used To Make Scripts")
 
 --BUTTONS
 LP:addButton("Reset Character",function()
@@ -94,7 +98,7 @@ ST:addButton("Chair",function()
         game.StarterGui:SetCore("SendNotification",{
         Title = "Executed Chair!";
         Text = "Have Fun Exploiting.";
-        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/hi/main/CHAIR%20RAW'))();
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/scripting/main/CHAIR.lua'))();
         })
 end)
 
@@ -168,11 +172,35 @@ ST:addButton("AOT MAIN",function()
         })
 end)
 
-ST:addButton("Sword Switch",function()
+ST:addButton("Sword Switcher",function()
         game.StarterGui:SetCore("SendNotification",{
-        Title = "Executed Swords Switch!";
+        Title = "Executed Swords Switcher!";
         Text = "Have Fun Exploiting.";
-        loadstring(game:HttpGetAsync(''))();
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/scripting/main/SWORDS.lua'))();
+        })
+end)
+
+ST:addButton("Katana",function()
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Executed Katana!";
+        Text = "Have Fun Exploiting.";
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/scripting/main/KATANA.lua'))();
+        })
+end)
+
+ST:addButton("Hammer",function()
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Executed Hammer!";
+        Text = "Have Fun Exploiting.";
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/scripting/main/HAMMER.lua'))();
+        })
+end)
+
+ST:addButton("VR",function()
+        game.StarterGui:SetCore("SendNotification",{
+        Title = "Executed VR!";
+        Text = "Have Fun Exploiting.";
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/scripting/main/FAKE%20VR1.lua'))();
         })
 end)
 
