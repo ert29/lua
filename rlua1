@@ -10,11 +10,7 @@ local Tab = Gui:AddTab("Home")
 
 local Category = Tab:AddCategory("Home Page")
 
-Category:AddLabel("Update Log:")
-
-Category:AddLabel("Current Version: V2.27 Beta")
-
-Category:AddLabel("New UI.")
+Category:AddLabel("Current Version: V2.38")
 
 Library:Notify("Thanks For Using Kadium Hub!", function(yesno)
     print("User selected:", yesno)
@@ -52,7 +48,7 @@ local Dropdown = Category:AddDropdown("Game Player List",PLIST,function(plist)
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =  game.Players[plist].Character.HumanoidRootPart.CFrame * CFrame.new(0,2,1)
 end)
 
-local Tab = Gui:AddTab("Scripts")
+local Tab = Gui:AddTab("R6")
 
 local Category = Tab:AddCategory("FE Scripts")
 --scripts
@@ -133,9 +129,18 @@ local Button = Category:AddButton("Actual VR", function()
     loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/scripting/main/FAKE%20VR1.lua'))()
 end)
 
+local Button = Category:AddButton("Scythe", function()
+    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/hi/main/SCYTHE'))()
+end)
+
+local Button = Category:AddButton("Sniper", function()
+    loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/hi/main/SNIPER'))()
+end)
+
 local Category = Tab:AddCategory("Animations")
 --anims
-local Button = Category:AddButton("Box Man", function()
+Category:AddLabel("All anims will be revamped due to some being broken lol.")
+--[[local Button = Category:AddButton("Box Man", function()
     loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/hi/main/Box%20Man%20RAW'))()
 end)
 
@@ -153,7 +158,11 @@ end)
 
 local Button = Category:AddButton("Powerful Walk", function()
     loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/ert29/hi/main/POWERFUL%20RAW'))()
-end)
+end)]]
+
+local Tab = Gui:AddTab("R15")
+
+local Category = Tab:AddCategory("Coming soon!!!11")
 
 local Tab = Gui:AddTab("Credits")
 
